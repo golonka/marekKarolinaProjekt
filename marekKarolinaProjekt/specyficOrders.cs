@@ -7,11 +7,11 @@ namespace marekKarolinaProjekt
         {
             if (client.ClientType == ClientType.Premium)
             {
-                order.Amount = order.Amount - ((order.Amount * 10) / 100);
+                order.Amount = order.Amount - ((order.Amount * 15) / 100);
             }
-            else if (client.ClientType == ClientType.SpecialClient)
+            else if (client.ClientType == ClientType.Special)
             {
-                order.Amount = order.Amount - ((order.Amount * 20) / 100);
+                order.Amount = order.Amount - ((order.Amount * 30) / 100);
             }
         }
     }

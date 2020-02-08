@@ -41,11 +41,9 @@ namespace TestsKM
         }
 
 
-        //Client service
         [Test]
         public void When_PremiumClient_Expect_10PercentDiscount()
         {
-            //Arrange
             Client premiumClient = new Client
             {
                 ClientId = 1,
@@ -63,10 +61,8 @@ namespace TestsKM
 
             SpecyficOrders customerOrderService = new SpecyficOrders();
 
-            //Act
             customerOrderService.ApplyDiscount(premiumClient, order);
 
-            //Assert
             NUnit.Framework.Assert.AreEqual(order.Amount, 135);
         }
 
@@ -77,12 +73,11 @@ namespace TestsKM
         [Test]
         public void When_BasicCustomer_Expect_NoDiscount()
         {
-            //Arrange
             Client basicCustomer = new Client
             {
                 ClientId = 2,
                 ClientName = "Karolajn",
-                ClientType = ClientType.Normal
+                ClientType = ClientType.Standard
             };
 
             Order order = new Order
@@ -95,10 +90,8 @@ namespace TestsKM
 
             SpecyficOrders customerOrderService = new SpecyficOrders();
 
-            //Act
             customerOrderService.ApplyDiscount(basicCustomer, order);
 
-            //Assert
             NUnit.Framework.Assert.AreEqual(order.Amount, 210);
         }
 

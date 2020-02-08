@@ -11,9 +11,9 @@ namespace marekKarolinaProjekt
 
     public enum ClientType
     {
-        Normal,
+        Standard,
         Premium,
-        SpecialClient
+        Special
     }
 
  
