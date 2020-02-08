@@ -42,7 +42,7 @@ namespace TestsKM
 
 
         [Test]
-        public void When_PremiumClient_Expect_10PercentDiscount()
+        public void When_PremiumClient_Expect_15PercentDiscount()
         {
             Client premiumClient = new Client
             {
@@ -56,14 +56,14 @@ namespace TestsKM
                 OrderId = 1,
                 ProductId = 212,
                 ProductQuantity = 1,
-                Amount = 150
+                Amount = 1000
             };
 
             SpecyficOrders customerOrderService = new SpecyficOrders();
 
             customerOrderService.ApplyDiscount(premiumClient, order);
 
-            NUnit.Framework.Assert.AreEqual(order.Amount, 135);
+            NUnit.Framework.Assert.AreEqual(order.Amount, 850);
         }
 
 
