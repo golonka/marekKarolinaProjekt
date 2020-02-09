@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "marekKarolinaProjekt", "mar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestsKM", "TestsKM\TestsKM.csproj", "{F801F227-86CA-488A-B8CF-F4E64FACB224}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Selenium", "Selenium\Selenium.csproj", "{2F448FBB-C8EB-474C-B416-8394996E153D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F801F227-86CA-488A-B8CF-F4E64FACB224}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F801F227-86CA-488A-B8CF-F4E64FACB224}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F801F227-86CA-488A-B8CF-F4E64FACB224}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F448FBB-C8EB-474C-B416-8394996E153D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F448FBB-C8EB-474C-B416-8394996E153D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F448FBB-C8EB-474C-B416-8394996E153D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F448FBB-C8EB-474C-B416-8394996E153D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
